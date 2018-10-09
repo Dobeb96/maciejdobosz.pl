@@ -6,6 +6,11 @@ body {
   background-image: url("../assets/background.jpg");
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 h1 {
   text-transform: uppercase;
   font-size: 4em;
@@ -19,6 +24,7 @@ h2 {
 }
 
 h3 {
+  height: 1em;
   text-transform: uppercase;
   font-size: 2em;
   font-weight: 300;
@@ -93,7 +99,14 @@ b {
   color: white;
   background-color: crimson;
 }
+#work .career,
+#education .career {
+  border-color: white;
+}
 
+#hello {
+  padding-top: 1.5cm;
+}
 #hello header {
   width: 100%;
   height: 5.75cm;
@@ -109,6 +122,27 @@ b {
   text-align: justify;
 }
 
+#contact-and-skills .career {
+  margin-top: 0.8cm;
+  margin-left: 0;
+}
+#contact-and-skills .career p {
+  margin: 0;
+  padding: 0;
+}
+#contact-and-skills .career .title {
+  padding-top: 0.5em;
+  line-height: 1em;
+  color: crimson;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  font-weight: bold;
+  opacity: 0.5;
+}
+#contact-and-skills .career .role {
+  font-size: 0.86em;
+}
+
 #my-photo {
   padding: 0;
 }
@@ -118,6 +152,42 @@ b {
   object-fit: cover;
 }
 
+#work .date {
+  left: -1.25cm;
+}
+
 /* End each specific cell styling */
+/* Career block */
+.career {
+  position: relative;
+  padding-left: 0.5cm;
+  margin: 1cm 0.5cm 1cm 0.8cm;
+  border-left: 1px solid black;
+  min-height: 2.5cm;
+}
+.career .title {
+  font-weight: 900;
+}
+.career .role {
+  opacity: 0.5;
+  font-weight: 900;
+}
+.career .description {
+  padding-top: 0.5em;
+  font-weight: 300;
+  font-size: 0.86em;
+  line-height: 1.1em;
+}
+.career .date {
+  position: absolute;
+  top: 1.05cm;
+  left: -1.5cm;
+  transform: rotate(-90deg);
+  opacity: 0.5;
+  font-size: 0.9em;
+  font-weight: 900;
+}
+
+/* End career block */
 
 /*# sourceMappingURL=mainstyle.css.map */
