@@ -30,6 +30,12 @@ h3 {
   font-weight: 300;
 }
 
+h4 {
+  text-transform: uppercase;
+  font-size: 1rem !important;
+  font-weight: 300;
+}
+
 .accent-color {
   color: crimson;
 }
@@ -82,25 +88,28 @@ b {
   margin: 0 auto;
   width: 21cm;
   height: 29.7cm;
-  box-shadow: 0 0 12px #666;
+  box-shadow: 0 0 16px #666;
 }
 
 /* End general sheet of paper styles */
 /* Each specific cell styling */
 #my-photo,
 #work,
-#education {
+#education,
+#languages {
   position: relative;
   box-shadow: 0 0 4px #444;
 }
 
 #work,
-#education {
+#education,
+#languages {
   color: white;
   background-color: crimson;
 }
 #work .career,
-#education .career {
+#education .career,
+#languages .career {
   border-color: white;
 }
 
@@ -142,6 +151,10 @@ b {
 #contact-and-skills .career .role {
   font-size: 0.86em;
 }
+#contact-and-skills .skills {
+  text-transform: uppercase;
+  font-weight: 900;
+}
 
 #my-photo {
   padding: 0;
@@ -154,6 +167,24 @@ b {
 
 #work .date {
   left: -1.25cm;
+}
+
+#github img {
+  display: block;
+  margin: 0 auto;
+}
+#github h3 {
+  text-align: center;
+}
+
+#languages .languages-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  max-width: 80%;
+}
+#languages .languages-container h4 {
+  text-align: center;
 }
 
 /* End each specific cell styling */

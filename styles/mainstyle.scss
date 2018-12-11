@@ -4,7 +4,6 @@ $brick-shadow: 0 0 4px #444;
 body {
   font-family: 'Heebo', sans-serif;
   padding: 1.4cm 0 0.2cm;
-  // background-color: midnightblue;
   background-attachment: fixed;
   background-size: cover;
   background-image: url('../assets/background.jpg');
@@ -23,6 +22,10 @@ body {
   height: 1em;
   text-transform: uppercase;
   font-size: 2em;
+  font-weight: 300;
+} h4 {
+  text-transform: uppercase;
+  font-size: 1rem !important;
   font-weight: 300;
 } .accent-color {
   color: $accent-color;
@@ -62,18 +65,20 @@ body {
   margin: 0 auto;
   width: 21cm;
   height: 29.7cm;
-  box-shadow: 0 0 12px #666;
+  box-shadow: 0 0 16px #666;
 }
 /* End general sheet of paper styles */
 
 /* Each specific cell styling */
 #my-photo,
 #work,
-#education {
+#education,
+#languages {
   position: relative;
   box-shadow: $brick-shadow;
 } #work,
-  #education {
+  #education,
+  #languages {
   color: white;
   background-color: $accent-color;
   .career {
@@ -112,6 +117,10 @@ body {
     } .role {
       font-size: .86em;
     }
+  } .skills {
+    text-transform: uppercase;
+    font-weight: 900;
+    // color: $accent-color;
   }
 }
 #my-photo {
@@ -124,6 +133,25 @@ body {
 } #work {
   .date {
     left: -1.25cm;
+  }
+} #github {
+  img {
+    // width: 60px;
+    // float: left;
+    display: block;
+    margin: 0 auto;
+  } h3 {
+    text-align: center;
+  }
+} #languages {
+  .languages-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 80%;
+    h4 {
+      text-align: center;
+    }
   }
 }
 /* End each specific cell styling */

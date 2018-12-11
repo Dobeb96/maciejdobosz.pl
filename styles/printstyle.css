@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: none;
+}
+
+#sheet-of-paper {
+  box-shadow: none;
+}
+
+@page {
+  margin: 0;
+}
+
+/*# sourceMappingURL=printstyle.css.map */

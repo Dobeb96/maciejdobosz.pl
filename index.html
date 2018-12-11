@@ -2,10 +2,12 @@
 <html>
 <head>
   <title>Maciej Dobosz - software developer</title>
+  <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css?family=Heebo:300,400,900" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="./styles/resetstyle.css">
   <link rel="stylesheet" type="text/css" href="./styles/mainstyle.css">
-  <link rel="stylesheet" type="text/css" href="./styles/flipper.css">
+  <link rel="stylesheet" type="text/css" media="print" href="./styles/printstyle.css">
+  <link rel="stylesheet" type="text/css" href="./styles/progress_bars.css">
 </head>
 <body>
   <section id="sheet-of-paper">
@@ -30,8 +32,8 @@
               +48 510 495 800
             </a>
             <p class="title">E-mail</p>
-            <a class="role" href="mailto:maciej.dobosz_md@outlook.com">
-              maciej.dobosz_md@outlook.com
+            <a class="role" href="mailto:maciej.dobosz.md@gmail.com">
+              maciej.dobosz.md@gmail.com
             </a>
             <p class="title">LinkedIn</p>
             <a class="role" target="_blank" href="https://www.linkedin.com/in/maciej-dobosz-072851135/">
@@ -42,20 +44,35 @@
               maciejdobosz.pl
             </a>
           </div>
+          <div class="career">
+            <span class="skills">
+              <ul>
+                <li>HTML, CSS, JS</li>
+                <li>PHP, SQL</li>
+                <li>Ruby</li>
+                <li>Ruby on Rails</li>
+                <li>Angular, Java</li>
+                <li>Linux, Bash</li>
+                <li>Git</li>
+              </ul>
+            </span>
+          </div>
         </div>
         <div id="my-photo" class="column column-wide">
-          <img alt="Maciej Dobosz - web and software developer" src="./assets/my_photo.jpg"></img>
+          <img alt="Maciej Dobosz - web and software developer" src="./assets/my_photo.jpg"/>
         </div>
       </div>
 
       <div class="row row-brick">
-        <div class="column column-wide">
+        <div class="column column-wide project">
           <h3>Projects</h3>
           <div class="career">
-            <p class="title"></p>
-            <p class="role"></p>
+            <a target="_blank" href="http://drinkup.pl">
+              <p class="title">Drinkup.pl</p>
+              <p class="role">Angular 5 app</p>
+            </a>
             <p class="description">
-
+              Leading a small team of students to create last year university project
             </p>
             <p class="date"></p>
           </div>
@@ -63,10 +80,12 @@
         <div id="work" class="column column-lean">
           <h3>Work</h3>
           <div class="career">
-            <a class="title" target="_blank" href="https://www.linkedin.com/company/releaseversion/">ReleaseVersion</a>
-            <p class="role">Ruby on Rails Intern</p>
+            <a target="_blank" href="https://www.linkedin.com/company/releaseversion/">
+              <p class="title">ReleaseVersion</p>
+              <p class="role">Ruby on Rails Intern</p>
+            </a>
             <p class="description">
-              Ruby on Rails, SQL, HTML, CSS, SCSS, JavaScript, jQuery, Git
+              Implementation of new back-end and front-end features under en eye of an experienced developer.
             </p>
             <p class="date">Aug 2018</p>
           </div>
@@ -74,10 +93,12 @@
         <div class="column column-wide">
           <h3></h3>
           <div class="career">
-            <p class="title"></p>
-            <p class="role"></p>
+            <a target="_blank" href="http://spiker.ayz.pl">
+              <p class="title">Spiker.ayz.pl</p>
+              <p class="role">Exam preparation platform</p>
+            </a>
             <p class="description">
-
+              Platform for UEK students that helps them prepare for exams. The service is used by almost 300 students each exam session.
             </p>
             <p class="date"></p>
           </div>
@@ -91,7 +112,7 @@
             <p class="title">University of Economics</p>
             <p class="role">Applied Informatics</p>
             <p class="description">
-              Bachelor's thesis: Techniques of modern website designs
+              Bachelor's thesis: Techniques of modern websites' design
             </p>
             <p class="date">2015 - 2018</p>
           </div>
@@ -99,10 +120,11 @@
         <div class="column column-lean">
           <h3></h3>
           <div class="career">
-            <p class="title"></p>
-            <p class="role"></p>
+            <p class="title">Freelancing</p>
             <p class="description">
-
+              <a class="role" target="_blank" href="http://cmliszki.pl">cmliszki.pl</a><br />
+              <a class="role" target="_blank" href="http://daszmed.pl">daszmed.pl</a><br />
+              <a class="role" target="_blank" href="http://technikam.eu">technikam.eu</a>
             </p>
             <p class="date"></p>
           </div>
@@ -110,10 +132,10 @@
         <div class="column column-wide">
           <h3></h3>
           <div class="career">
-            <p class="title"></p>
+            <p class="title">Other projects</p>
             <p class="role"></p>
             <p class="description">
-
+              Hobby projects like <a class="role" target="_blank" href="https://mighty-waters-21921.herokuapp.com/">betting website</a>, <a class="role" target="_blank" href="https://github.com/Dobeb96/F1_Predictions">prediction algorithms</a>, <a class="role" target="_blank" href="https://github.com/Dobeb96/Snooker-counter">mobile apps</a>.
             </p>
             <p class="date"></p>
           </div>
@@ -121,11 +143,46 @@
       </div>
 
       <div class="row row-footer">
-        <div class="column column-wide">
-          <!--  -->
+        <div id="github" class="column column-wide">
+          <a href="https://github.com/Dobeb96" target="_blank">
+            <img src="./assets/github_octocat.png"/>
+            <h3>Dobeb96</h3>
+          </a>
         </div>
-        <div class="column column-double">
-          <!--  -->
+        <div id="languages" class="column column-double">
+          <h3>Languages</h3>
+          <div class="languages-container">
+            <div class="charts-container" style="font-size: 4em;">
+              <div class="pie-wrapper progress-100 style-2">
+                <span class="label">native</span>
+                <div class="pie">
+                  <div class="left-side half-circle"></div>
+                  <div class="right-side half-circle"></div>
+                </div>
+              </div>
+              <h4>Polish</h4>
+            </div>
+            <div class="charts-container" style="font-size: 4em;">
+              <div class="pie-wrapper progress-90 style-2">
+                <span class="label">C1</span>
+                <div class="pie">
+                  <div class="left-side half-circle"></div>
+                  <div class="right-side half-circle"></div>
+                </div>
+              </div>
+              <h4>English</h4>
+            </div>
+            <div class="charts-container" style="font-size: 4em;">
+              <div class="pie-wrapper progress-16 style-2">
+                <span class="label">A1</span>
+                <div class="pie">
+                  <div class="left-side half-circle"></div>
+                  <div class="right-side half-circle"></div>
+                </div>
+              </div>
+              <h4>Norwegian</h4>
+            </div>
+          </div>
         </div>
       </div>
   </section>
