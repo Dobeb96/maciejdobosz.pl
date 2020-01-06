@@ -32,6 +32,17 @@ body {
 } b {
   color: $accent-color;
   font-weight: bold;
+} .grey {
+  color: grey;
+} .cursor-inactive {
+  cursor: not-allowed;
+} .smaller {
+  line-height: .9em;
+  font-size: .8em;
+} .show-on-hover {
+  display: none;
+} .pie-wrapper:hover .show-on-hover {
+  display: block;
 }
 
 /* The grid */
@@ -119,12 +130,10 @@ body {
       font-size: .86em;
     }
   } .skills {
-    text-transform: uppercase;
     font-weight: 900;
-    // color: $accent-color;
+    text-transform: uppercase;
   }
-}
-#my-photo {
+} #my-photo {
   z-index: 1;
   padding: 0;
   img {
@@ -135,11 +144,11 @@ body {
 } #work {
   .date {
     left: -1.25cm;
+  } .career {
+    margin-top: 1cm;
   }
 } #github {
   img {
-    // width: 60px;
-    // float: left;
     display: block;
     margin: 0 auto;
   } h3 {
@@ -155,6 +164,16 @@ body {
       text-align: center;
     }
   }
+} #other-projects {
+  display: flex;
+  align-items: center;
+  .career {
+    margin: 0;
+  }
+} #ror {
+  .career {
+    margin: .8cm .5cm 1cm .0cm;
+  }
 }
 /* End each specific cell styling */
 
@@ -162,7 +181,7 @@ body {
 .career {
   position: relative;
   padding-left: .5cm;
-  margin: 1cm .5cm 1cm .8cm;
+  margin: 1.2cm .5cm 1cm .8cm;
   border-left: 1px solid black;
   min-height: 2.5cm;
   .title {
@@ -174,7 +193,6 @@ body {
     padding-top: .5em;
     font-weight: 300;
     font-size: .86em;
-    line-height: 1.1em;
   } .date {
     position: absolute;
     top: 1.05cm; left: -1.5cm;
@@ -188,7 +206,7 @@ body {
 
 /* UBS block */
 #work.ubs .date {
-  top: 1.16cm; left: -2.1cm;
+  top: 1.38cm; left: -2.1cm;
 } #work.no-left-shadow {
   box-shadow: 2px 0 2px #444;
 }

@@ -122,10 +122,10 @@ $label-font-size-redo: $default-size * 4;
   }
 
   &.progress-90 {
-    @include draw-progress(90, white);
+    @include draw-progress(83.333, white);
   }
 
-  &.progress-16 {
-    @include draw-progress(16, white);
+  &.progress-30 {
+    @include draw-progress(34, white);
   }
 }

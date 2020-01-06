@@ -1,1 +1,7 @@
-{"version":3,"sourceRoot":"","sources":["printstyle.scss"],"names":[],"mappings":"AAAA;EACE;EACA;EACA;;;AAEF;EACE;;;AAEF;EACI","file":"printstyle.css"}
+{
+"version": 3,
+"mappings": "AAAA,IAAK;EACH,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,IAAI;;AAElB,eAAgB;EACd,UAAU,EAAE,IAAI;;AAElB,KAEC;EADG,MAAM,EAAE,CAAC",
+"sources": ["printstyle.scss"],
+"names": [],
+"file": "printstyle.css"
+}

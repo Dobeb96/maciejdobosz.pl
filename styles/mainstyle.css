@@ -37,6 +37,22 @@ b {
   color: crimson;
   font-weight: bold; }
 
+.grey {
+  color: grey; }
+
+.cursor-inactive {
+  cursor: not-allowed; }
+
+.smaller {
+  line-height: .9em;
+  font-size: .8em; }
+
+.show-on-hover {
+  display: none; }
+
+.pie-wrapper:hover .show-on-hover {
+  display: block; }
+
 /* The grid */
 .column {
   float: left;
@@ -125,8 +141,8 @@ b {
   #contact-and-skills .career .role {
     font-size: .86em; }
 #contact-and-skills .skills {
-  text-transform: uppercase;
-  font-weight: 900; }
+  font-weight: 900;
+  text-transform: uppercase; }
 
 #my-photo {
   z-index: 1;
@@ -138,6 +154,8 @@ b {
 
 #work .date {
   left: -1.25cm; }
+#work .career {
+  margin-top: 1cm; }
 
 #github img {
   display: block;
@@ -153,12 +171,21 @@ b {
   #languages .languages-container h4 {
     text-align: center; }
 
+#other-projects {
+  display: flex;
+  align-items: center; }
+  #other-projects .career {
+    margin: 0; }
+
+#ror .career {
+  margin: .8cm .5cm 1cm .0cm; }
+
 /* End each specific cell styling */
 /* Career block */
 .career {
   position: relative;
   padding-left: .5cm;
-  margin: 1cm .5cm 1cm .8cm;
+  margin: 1.2cm .5cm 1cm .8cm;
   border-left: 1px solid black;
   min-height: 2.5cm; }
   .career .title {
@@ -169,8 +196,7 @@ b {
   .career .description {
     padding-top: .5em;
     font-weight: 300;
-    font-size: .86em;
-    line-height: 1.1em; }
+    font-size: .86em; }
   .career .date {
     position: absolute;
     top: 1.05cm;
@@ -183,7 +209,7 @@ b {
 /* End career block */
 /* UBS block */
 #work.ubs .date {
-  top: 1.16cm;
+  top: 1.38cm;
   left: -2.1cm; }
 
 #work.no-left-shadow {
